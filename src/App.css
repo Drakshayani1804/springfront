@@ -36,3 +36,95 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/* src/App.css */
+
+/* Adjustments for the carousel container */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: auto; /* Allow height to adjust based on content */
+}
+
+/* Ensure images take full width and height */
+.carousel-item {
+  position: relative;
+  height: auto; /* Let height be auto for natural display */
+}
+
+/* Position dots directly below the images */
+.slick-dots {
+  position: relative; /* Change to relative for proper alignment */
+  margin-top: 10px; /* Space between images and dots */
+  text-align: center; /* Center the dots */
+}
+
+/* Style the dots */
+.slick-dots li button:before {
+  font-size: 12px; /* Dot size */
+  color: white; /* Dot color */
+}
+
+.slick-dots li.slick-active button:before {
+  color: orange; /* Active dot color */
+}
+
+
+/* AboutUs.css */
+.about-us-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.image-slide {
+  animation: slide-in 1s ease-in-out forwards;
+}
+
+.image-slide img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.about-us-title {
+  margin-top: 20px;
+}
+
+.about-us-description {
+  margin-top: 10px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Add this to your CSS file, e.g., src/App.css */
+
+.wardrobe-height-container {
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.height-options {
+  margin: 20px 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+

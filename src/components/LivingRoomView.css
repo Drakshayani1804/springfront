@@ -1,0 +1,28 @@
+/* LivingRoomView.css */
+
+/* Container that holds the iframes */
+.living-room-container {
+    display: flex;
+    justify-content: space-evenly; /* Evenly spaces the iframes */
+    align-items: center;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    position: relative;
+    flex-wrap: wrap; /* Allow wrapping if space is constrained */
+  }
+  
+  /* Styling for each iframe container */
+  .iframe-container {
+    width: 48%;  /* Adjust the width for two iframes side by side */
+    height: 100%;
+    margin: 1%; /* Space between the iframes */
+  }
+  
+  /* Styling for the iframe */
+  .panorama-iframe {
+    width: 100%;  /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    border: none; /* Remove default iframe border */
+    object-fit: cover; /* Ensure it covers the area properly */
+  }
+  
